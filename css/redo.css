@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main, html, body{
+  height: 100%;
+}
+
+.hero{
+  height: 100%;
+  background: url(img/background.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.dimmer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0,0,0, 0.5);
+}
+
+nav ul{
+  list-style: none;
+}
+nav{
+  position: absolute;
+  left: 50%;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 4;
+}
+
+nav li{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  margin-right: 6px;
+}
+nav li:last-child{
+  margin-right: 0;
+}
+.active{
+  background-color: #fff;
+}
+
+article{
+  float: left;
+  width: 48%;
+  margin-right: 1%;
+}
+
+article:nth-child(odd){
+  margin-left: 1%;
+}
+
+article:nth-child(even){
+  margin-left: 0%;
+  background: red;
+}
+
+article img{
+  width: 100%;
+  height: auto;
+}
+
+article figure{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+article figure:hover figcaption{
+  top: 0px;
+}
+
+figcaption{
+  position: absolute;
+  top: -200px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-out;
+}
+.clearfix:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+h3{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.social{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.social{
+  list-style: none;
+}
+.social li{
+  float: left;
+  color: #fff;
+  background: #000;
+  height: 100px;
+  width: 23%;
+  margin-right: 2%;
+  padding-top: 28px;
+  text-align: center;
+}
+.social li:last-child{
+  margin-right: 0;
+}
+
+.social li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social li i{
+  font-size: 40px;
+  display: block;
+}
+
+.social .facebook:before{
+  content: '\f09a';
+  display: block;
+  font-size: 40px;
+  font-family: 'FontAwesome';
+}
+
+a.explore{
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.explore:after{
+  content: "\f0a9";
+  margin-left: 10px;
+
+  font-size: 18px;
+  font-family: 'FontAwesome';
+}
+
+section{
+  padding: 20px 0;
+}
+.circle{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
